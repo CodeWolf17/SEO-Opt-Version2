@@ -1,0 +1,244 @@
+html {
+    font-family: Arial;
+    font-size: 16px;
+    background: rgb(14, 103, 204);
+    justify-content: center;
+    align-items: center;
+    /*
+    background-image: url("https://images.unsplash.com/photo-1594731804139-d70328c07f4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGdhZGdldHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+  */
+    background-size: 100%;
+    box-sizing: border-box;
+  }
+  
+  * a {
+    text-decoration: none; /* removes link decoration (blue underline)*/
+  }
+  
+  /*Special Font Purpose Classes*/
+  .h7 {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #FFF;
+  }
+  
+  .h8 {
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+  }
+
+/*Special Font Purpose Classes*/
+
+
+/*navigation menu */
+
+#ul-nb {
+  list-style:none;
+  margin:3px;
+}
+#ul-nb li {
+  float:left;
+  border-radius: 5px;
+  padding: 10px 80px 10px 80px;
+  background:rgb(255, 255, 255);
+  text-align: center;
+  margin-left:auto;
+}
+#ul-nb li:hover {
+  background:rgba(1, 46, 97, 0.541);
+  opacity:0.8;
+  color:white;
+}
+
+
+.nav {
+    z-index: 9;
+    position: flex;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+    display: flex;
+    justify-content: center;
+    margin: 10px 150px 0 150px;
+}
+
+.phonenav {
+display: none;
+}
+
+
+/* end of navigation menu*/
+
+/***********Button Containers***********/
+
+.btn {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  background-color: rgb(68, 255, 30);
+  border: none;
+  color: white;
+  padding: 30px 200px;
+  cursor: grab;
+  font-size: 20px;
+  border-radius: 10px;
+  z-index: 9;  
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: rgb(41, 199, 10);
+}
+/***********End Of Button Containers***********/
+/* Containers */
+
+    
+.container {
+    width: 1170px; /* specify a width */
+    margin: 0 auto;  /* centers the container */
+    padding: 0 15px; /* adds some padding to the left and right*/
+  }
+
+  .jumbo {
+    z-index: 9;
+    position: flex;
+    background-color: rgba(1, 46, 97, 0.541);
+    padding: 20px;
+    transition: 0.5s;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+    display: flex;
+    justify-content: center;
+   
+}
+/* fills out the jumbotron */
+   
+
+
+  
+
+/*****************************CARD CSS************************************/
+/*****************************CARD CSS************************************/
+.cards-list {
+  z-index: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction:inherit;
+  position:flex;
+  float:left;
+  overflow: hidden;
+  
+  }
+  
+  
+  .card {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  .cardaf {    /*card for affiliate links*/
+    width:120px;
+    height:240px;
+    margin: 30px auto;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  .card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+  }
+  
+  .card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+  }
+  
+  .card .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -80px;
+    height: 40px;
+  }
+  
+  .card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+  .cardaf:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  .title-white {
+    color: white;
+  }
+  
+  .title-black {
+    color: black;
+  }
+  
+  
+  /*****************************CARD CSS END************************************/
+  /*****************************CARD CSS END************************************/
+  
+
+
+  @media only screen and (max-width: 700px) {
+
+    .nav {
+      visibility:hidden;
+    }
+
+    .phonenav {
+      display:block;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      align-items: center;
+      font-size: 0.65em;
+      z-index: 9;
+    }
+
+    .cards-list {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+      max-width: 100;
+      top:20px;
+      
+    }
+
+    #ul-nb li {
+      float:left;
+      border-radius: 5px;
+      padding: 0px 10px 12px 25px;
+      background:rgb(255, 255, 255);
+      align-items: center;
+      margin-left:12.5px;
+      border-bottom-width: 4px; 
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+text-decoration: none;
+    }}
