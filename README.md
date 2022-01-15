@@ -1,7 +1,7 @@
 # SEO-Optimisation
 
 This Is My SEO Optimization Assignment Project 
-GithubUrl:https://github.com/CodeWolf17/SEO-Opt-Version2
+GithubUrl: https://github.com/CodeWolf17/SEO-Optimisation.git
 LiveLink: #
 
 ################Group21Members#################
