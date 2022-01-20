@@ -12,7 +12,7 @@ html {
   background-position:center;
   background-size: cover;
   position: relative;
-  background-image: linear-gradient(rgba(185, 122, 122, 0.596), #7a766ec4),url(media/yep.jpg);
+  background-image: linear-gradient(rgba(253, 253, 253, 0.596), #dbdbdbc4);
 }
 * a {
   text-decoration: none; /* removes link decoration (blue underline)*/
@@ -52,7 +52,7 @@ h3:hover{
   padding:  0.6%;
   justify-content: space-between;
   align-items: center;
-
+  margin-top:10px;
 }
 
 /*Special Font Purpose Classes*/
@@ -110,13 +110,35 @@ padding: 30px 200px;
 cursor: grab;
 font-size: 20px;
 border-radius: 10px;
- 
+
 }
 
 /* Darker background on mouse-over */
 .btn:hover {
 background-color: rgb(41, 199, 10);
 }
+
+.fbtn {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  background-color: rgb(68, 255, 30);
+  border: none;
+  color: white;
+  padding: 30px 200px;
+  cursor: grab;
+  font-size: 20px;
+  border-radius: 10px;
+  display: none;
+  text-align: center;
+  }
+  
+  /* Darker background on mouse-over */
+  .fbtn:hover {
+  background-color: rgba(1, 46, 97, 0.541);
+  }
+
+
+
 /***********End Of Button Style ***********/
 /***********End Of Button Style ***********/
 
@@ -140,6 +162,7 @@ background-color: rgb(41, 199, 10);
   box-shadow: 0 8px 15px rgba(0,0,0,.2);
   display: flex;
   justify-content: center;
+  align-items: center;
  
 }
 /* fills out the jumbotron */
@@ -158,13 +181,14 @@ width: fit-content;
 
 
 .card {
-  margin: 30px auto;
+  margin: 40px auto;
   width: 300px;
   height: 300px;
   border-radius: 40px;
   box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
   cursor: pointer;
   transition: 0.4s;
+
 }
 
 .cardaf {    /*card for affiliate links*/
@@ -297,17 +321,24 @@ border-radius: 0px 0px 20px 20px;
   }
 
   .btn {
-    padding: 20px 100px;
+    padding: 20px 30%;
     margin-bottom: 20px;
     margin-right: 40px;
     
   }
 
+  .fbtn {
+    display: block;
+    padding: 10px 50px;
+    margin-bottom: 5px;
+    align-items: center;
+
+  }
 
   #ul-nb li {
     
     border-radius: 5px;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 30px 10px 30px; 
     background:rgb(255, 255, 255);
     align-items: center;
     margin-left:6px;
