@@ -103,7 +103,7 @@ display: none;
 .btn {
 margin-top: 5px;
 margin-bottom: 30px;
-background-color: rgb(68, 255, 30);
+background-color: rgba(0, 104, 223, 0.904);
 border: none;
 color: white;
 padding: 30px 200px;
@@ -121,7 +121,7 @@ background-color: rgb(41, 199, 10);
 .fbtn {
   margin-top: 5px;
   margin-bottom: 30px;
-  background-color: rgb(68, 255, 30);
+  background-color: rgba(1, 46, 97, 0.541);
   border: none;
   color: white;
   padding: 30px 200px;
@@ -134,10 +134,14 @@ background-color: rgb(41, 199, 10);
   
   /* Darker background on mouse-over */
   .fbtn:hover {
-  background-color: rgba(1, 46, 97, 0.541);
+    background-color: rgb(37, 214, 1);
   }
 
-
+  .active
+  {
+    background-color: rgba(0, 104, 223, 0.904);
+    border-radius: 10px;
+  }
 
 /***********End Of Button Style ***********/
 /***********End Of Button Style ***********/
@@ -163,7 +167,7 @@ background-color: rgb(41, 199, 10);
   display: flex;
   justify-content: center;
   align-items: center;
- 
+  border-radius: 0px 0px 10px 10px;
 }
 /* fills out the jumbotron */
  
@@ -298,6 +302,9 @@ border-radius: 0px 0px 20px 20px;
     margin-bottom: 10px;
   }
 
+  .navlist {
+    display: none;
+  }
   .phonenav {
     align-self: center;
     display:block;
