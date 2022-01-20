@@ -1,80 +1,92 @@
 /************General Css
 Licenced Under KiloTonics
 For more information, please refer to <https://unlicense.org>
-************88*/
+***************/
 
 html {
-    font-family: Arial;
-    font-size: 16px;
-    background: rgb(14, 103, 204);
-    justify-content: center;
-    align-items: center;
-    /*
-    background-image: url("https://images.unsplash.com/photo-1594731804139-d70328c07f4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGdhZGdldHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
-  */
-    background-size: 100%;
-    box-sizing: border-box;
-  }
-  
-  * a {
-    text-decoration: none; /* removes link decoration (blue underline)*/
-  }
-  
-  /*Special Font Purpose Classes*/
-    /*Special Font Purpose Classes*/
-  .h7 {
-    text-align: center;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-    color: #FFF;
-  }
-  
-  .h8 {
-    text-align: left;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 22px;
-    color: rgb(0, 0, 0);
-  }
-
-/*Special Font Purpose Classes*/
-/*Special Font Purpose Classes*/
-
-
-/*navigation menu */
-/*navigation menu */
-
-#ul-nb {
-  list-style:none;
-  margin:3px;
+  font-family: Arial;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-position:center;
+  background-size: cover;
+  position: relative;
+  background-image: linear-gradient(rgba(185, 122, 122, 0.596), #7a766ec4),url(media/yep.jpg);
 }
-#ul-nb li {
-  float:left;
-  border-radius: 5px;
-  padding: 10px 80px 10px 80px;
-  background:rgb(255, 255, 255);
+* a {
+  text-decoration: none; /* removes link decoration (blue underline)*/
+}
+
+.head{
+  padding-top: 2%;
+  color: rgba(250, 245, 245, 0.863);
+}
+/*Special Font Purpose Classes*/
+.h7 {
   text-align: center;
-  margin-left:auto;
-}
-#ul-nb li:hover {
-  background:rgba(1, 46, 97, 0.541);
-  opacity:0.8;
-  color:white;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #FFF;
 }
 
+.h8 {
+  text-align: left;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+}
+h3{
+  color: black;
+  font-weight: bold;
+}
+h3:hover{
+  color: rgba(219, 15, 15, 0.658);
+  
+}
+.navlist { 
+  float: right;
+  display: flex;
+  padding:  0.6%;
+  justify-content: space-between;
+  align-items: center;
 
-.nav {
-    z-index: 9;
-    position: flex;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 50px;
-    overflow: hidden;
-    box-shadow: 0 8px 15px rgba(0,0,0,.2);
-    display: flex;
-    justify-content: center;
-    margin: 10px 150px 0 150px;
+}
+
+/*Special Font Purpose Classes*/
+
+/*navigation menu */
+
+.ul-nb {
+list-style:none;
+}
+.ul-nb li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative
+
+}
+
+.ul-nb li a{
+  color: rgb(23, 11, 126);
+  text-decoration: none;
+  font-size: 20px;
+}
+.ul-nb li a::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f4433f;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.ul-nb li a:hover::after{
+  width: 100%;
+  color: rgb(10, 4, 63);
 }
 
 .phonenav {
@@ -89,209 +101,216 @@ display: none;
 /***********Button Style ***********/
 
 .btn {
-  margin-top: 5px;
-  margin-bottom: 30px;
-  background-color: rgb(68, 255, 30);
-  border: none;
-  color: white;
-  padding: 30px 200px;
-  cursor: grab;
-  font-size: 20px;
-  border-radius: 10px;
-  z-index: 9;  
+margin-top: 5px;
+margin-bottom: 30px;
+background-color: rgb(68, 255, 30);
+border: none;
+color: white;
+padding: 30px 200px;
+cursor: grab;
+font-size: 20px;
+border-radius: 10px;
+ 
 }
 
 /* Darker background on mouse-over */
 .btn:hover {
-  background-color: rgb(41, 199, 10);
+background-color: rgb(41, 199, 10);
 }
 /***********End Of Button Style ***********/
 /***********End Of Button Style ***********/
 
 /* Containers */
 
-    
+  
 .container {
-    width: 80%; /* specify a width */
-    margin: 0 auto;  /* centers the container */
-    padding: 0 15px; /* adds some padding to the left and right*/
-    margin-top: 20px;
-  }
+  width: 80%; /* specify a width */
+  margin: 0 auto;  /* centers the container */
+  padding: 0 15px; /* adds some padding to the left and right*/
+  margin-top: 20px;
+}
 
-  .jumbo {
-    z-index: 9;
-    position: flex;
-    background-color: rgba(1, 46, 97, 0.541);
-    padding: 20px;
-    transition: 0.5s;
-    overflow: hidden;
-    box-shadow: 0 8px 15px rgba(0,0,0,.2);
-    display: flex;
-    justify-content: center;
-   
+.jumbo {
+  z-index: 9;
+  position: flex;
+  background-color: rgba(1, 46, 97, 0.541);
+  padding: 20px;
+  transition: 0.5s;
+  overflow: hidden;
+  box-shadow: 0 8px 15px rgba(0,0,0,.2);
+  display: flex;
+  justify-content: center;
+ 
 }
 /* fills out the jumbotron */
-   
+ 
 
 
 /*****************************CARD CSS************************************/
 /*****************************CARD CSS************************************/
 .cards-list {
-  z-index: 0;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap:wrap;
-  flex-direction:inherit;
-  position:flex;
-  float:left;
-  overflow: hidden;
-  
-  }
-  
-  
-  .card {
-    margin: 30px auto;
-    width: 300px;
-    height: 300px;
-    border-radius: 40px;
-    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
-    cursor: pointer;
-    transition: 0.4s;
-  }
-  
-  .cardaf {    /*card for affiliate links*/
-    width:120px;
-    height:240px;
-    margin: 30px auto;
-    border-radius: 40px;
-    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
-    cursor: pointer;
-    transition: 0.4s;
-  }
-  
-  .card .card_image {
-    width: inherit;
-    height: inherit;
-    border-radius: 40px;
-  }
-  
-  .card .card_image img {
-    width: inherit;
-    height: inherit;
-    border-radius: 40px;
-    object-fit: cover;
-  }
-  
-  .card .card_title {
-    text-align: center;
-    border-radius: 0px 0px 40px 40px;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-    margin-top: -80px;
-    height: 40px;
-  }
-  
-  .card:hover {
-    transform: scale(0.9, 0.9);
-    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-      -5px -5px 30px 15px rgba(0,0,0,0.22);
-  }
-  
-  .cardaf:hover {
-    transform: scale(0.9, 0.9);
-    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-      -5px -5px 30px 15px rgba(0,0,0,0.22);
-  }
+display: flex;
+justify-content: space-around;
+flex-wrap:wrap;
+overflow: hidden;
+width: fit-content;
+}
 
 
-  
-  .title-white {
-    color: white;
-  }
-  
-  .title-black {
-    color: black;
-  }
-  
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.cardaf {    /*card for affiliate links*/
+  width:120px;
+  height:240px;
+  margin: 30px auto;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.cardaf:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
 
 
 /*****************************business CSS ************************************/
 
 .cardb {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 60%;
-  border-radius: 5px;
-  border-radius: 10px 10px 20px 20px;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+width: 60%;
+border-radius: 5px;
+border-radius: 10px 10px 20px 20px;
 }
 
 .cardb:hover {
-  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
 }
 
 img.cardb {
-  border-radius: 5px 5px 0 0;
+border-radius: 5px 5px 0 0;
 }
 
 .containerb {
-  padding: 2px 18%;
-  background-color: rgba(255, 255, 255, 0.849);
-  border-radius: 0px 0px 20px 20px;
-  
+padding: 2px 18%;
+background-color: rgba(255, 255, 255, 0.849);
+border-radius: 0px 0px 20px 20px;
+
+}
+
+.blackhat {
+  font-size: 0;
+  color: linear-gradient(rgba(185, 122, 122, 0.596), #7a766ec4);
 }
 
 /*****************************business CSS end ************************************/
 
-  
-
-  /*****************************CARD CSS END************************************/
-  /*****************************CARD CSS END************************************/
-  
 
 
-  @media only screen and (max-width: 600px) {
-
-    .nav {
-      display: none;
-      margin-bottom: 10px;
-    }
-
-    .phonenav {
-      align-self: center;
-      display:block;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-      font-size: 0.65em;
-      z-index: 9;
-      margin-left: 0 auto;
-    }
-
-    .cards-list {
-      /* On small screens, we are no longer using row direction but column */
-      flex-direction:column;
-      max-width: 100%;
-      margin-top: 10px;
-    }
-
-    .card{
-   width: 100%;
-    }
-
-    .btn {
-      padding: 20px 100px;
-      margin-bottom: 20px;
-    }
+/*****************************CARD CSS END************************************/
+/*****************************CARD CSS END************************************/
 
 
-    #ul-nb li {
-      
-      border-radius: 5px;
-      padding: 10px 30px 10px 30px;
-      background:rgb(255, 255, 255);
-      align-items: center;
-      margin-left:6px;
-      border-bottom-width: 5px; 
-      text-decoration: none;
-    }}
+
+@media only screen and (max-width: 600px) {
+
+
+  .ul-nb li a{
+    display: none;
+  }
+  .nav {
+    display: none;
+    margin-bottom: 10px;
+  }
+
+  .phonenav {
+    align-self: center;
+    display:block;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.65em;
+    z-index: 9;
+    margin-left: 0 auto;
+  }
+
+  .cards-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction:column;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  .card{
+ width: 100%;
+  }
+
+  .btn {
+    padding: 20px 100px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    
+  }
+
+
+  #ul-nb li {
+    
+    border-radius: 5px;
+    padding: 10px 30px 10px 30px;
+    background:rgb(255, 255, 255);
+    align-items: center;
+    margin-left:6px;
+    border-bottom-width: 5px; 
+    text-decoration: none;
+  }}

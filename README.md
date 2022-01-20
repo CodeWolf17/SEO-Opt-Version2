@@ -16,13 +16,12 @@ SAZIA  H  RAJABU-NIT/BIT/2020/1361
 JESCA M SIMBA -NIT/BIT/2020/1480
 MASOUD ABDALLAH MAHAMUDU-NIT/BIT/2020/1418
 WILFRED D SILAYO NIT/BIT/2020/1379
-
+MARTHA BUBELWA NIT/BIT/2020/1482
 ###############################################
 
 Mobile App Link 
 https://gonative.io/share/yolqwj
 https://gonative.io/app/nqgzr2d9ankdqtp36ndd958xg8/manage
-download for android: https://gonativeio.s3.amazonaws.com/static/61d419973554620429f26b9e/app-release.apk
 
 Website Link
 https://kilotonics.web.app/promo.html
