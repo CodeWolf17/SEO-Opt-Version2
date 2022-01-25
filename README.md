@@ -25,8 +25,11 @@ https://gonative.io/share/yolqwj
 https://gonative.io/app/nqgzr2d9ankdqtp36ndd958xg8/manage
 
 # Website Link
-https://kilotonics.web.app/promo.html
+https://kilotonics.web.app
 
 # Affiliate account
 x2
 https://affiliate-program.amazon.com/home/productlinks/customize?asin=B08FYTRF6J
+
+# Github Link
+https://github.com/CodeWolf17/SEO-Optimisation.git

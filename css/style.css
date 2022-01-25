@@ -43,11 +43,11 @@ h3{
   font-weight: bold;
 }
 h3:hover{
-  color: rgba(219, 15, 15, 0.658);
+  color:  rgb(22, 1, 211);
   
 }
 .navlist { 
-  float: right;
+  align-content: center;
   display: flex;
   padding:  0.6%;
   justify-content: space-between;
@@ -89,9 +89,6 @@ list-style:none;
   color: rgb(10, 4, 63);
 }
 
-.phonenav {
-display: none;
-}
 
 
 /* end of navigation menu*/
@@ -198,7 +195,7 @@ width: fit-content;
 .cardaf {    /*card for affiliate links*/
   width:120px;
   height:240px;
-  margin: 40px auto;
+  margin: 80px;
   border-radius: 40px;
   box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
   cursor: pointer;
@@ -306,16 +303,7 @@ border-radius: 0px 0px 20px 20px;
   .navlist {
     display: none;
   }
-  .phonenav {
-    align-self: center;
-    display:block;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    font-size: 0.65em;
-    z-index: 9;
-    margin-left: 0 auto;
-  }
+
 
   .cards-list {
     /* On small screens, we are no longer using row direction but column */
